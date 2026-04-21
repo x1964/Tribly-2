@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+Allow: /communities.html
+Allow: /ar/
+Disallow: /copy.html
+Disallow: /BingSiteAuth.xml
+Disallow: /manifest.json
+Disallow: /security.txt
+
+Sitemap: https://tribly.online/sitemap.xml

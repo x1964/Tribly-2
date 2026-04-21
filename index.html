@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tribly</title>
+
+  <!-- إعادة توجيه فورية (أسرع طريقة) -->
+  <meta http-equiv="refresh" content="0; url=https://tribly.infinityfree.me/">
+
+  <!-- كود تحويل فوري وجافا سكريبت احتياطي -->
+  <script>
+    // منع المتصفح من تخزين هذه الصفحة مؤقتاً لضمان التحويل الفوري دائماً
+    window.onpageshow = function (event) {
+      if (event.persisted) {
+        window.location.replace("https://tribly.infinityfree.me/");
+      }
+    };
+    // التحويل الفوري
+    window.location.replace("https://tribly.infinityfree.me/");
+  </script>
+
+  <!-- تحويل احتياطي إذا فشل كل شيء أعلاه -->
+  <noscript>
+    <meta http-equiv="refresh" content="0; url=https://tribly.infinityfree.me/">
+  </noscript>
+
+  <!-- إخفاء أي محتوى بشكل فوري لمنع ظهوره حتى لجزء من الثانية -->
+  <style>
+    body {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- هذا النص لن يظهر أبداً بسبب CSS أعلاه، لكنه موجود تحسباً -->
+  <a href="https://tribly.infinityfree.me/">اضغط هنا إذا لم يتم التحويل تلقائياً</a>
+</body>
+
+</html>
