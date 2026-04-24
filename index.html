@@ -1,42 +1,116 @@
 <!DOCTYPE html>
 <html lang="ar">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tribly</title>
-
-  <!-- إعادة توجيه فورية (أسرع طريقة) -->
-  <meta http-equiv="refresh" content="0; url=https://tribly.infinityfree.me/">
-
-  <!-- كود تحويل فوري وجافا سكريبت احتياطي -->
-  <script>
-    // منع المتصفح من تخزين هذه الصفحة مؤقتاً لضمان التحويل الفوري دائماً
-    window.onpageshow = function (event) {
-      if (event.persisted) {
-        window.location.replace("https://tribly.infinityfree.me/");
-      }
-    };
-    // التحويل الفوري
-    window.location.replace("https://tribly.infinityfree.me/");
-  </script>
-
-  <!-- تحويل احتياطي إذا فشل كل شيء أعلاه -->
-  <noscript>
-    <meta http-equiv="refresh" content="0; url=https://tribly.infinityfree.me/">
-  </noscript>
-
-  <!-- إخفاء أي محتوى بشكل فوري لمنع ظهوره حتى لجزء من الثانية -->
-  <style>
-    body {
-      display: none;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>تنظيم الأفكار والمهام</title>
+<style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f5f5f5;
+    color: #333;
+    padding: 20px;
+  }
+  h1 {
+    text-align: center;
+    color: #4caf50;
+    margin-bottom: 20px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  th, td {
+    padding: 12px 15px;
+    text-align: center;
+  }
+  th {
+    background: #4caf50;
+    color: #fff;
+    font-weight: bold;
+  }
+  tr:nth-child(even) {
+    background: #f0f0f0;
+  }
+  input, select, textarea {
+    width: 100%;
+    padding: 6px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  textarea {
+    resize: vertical;
+  }
+  .container {
+    max-width: 1200px;
+    margin: auto;
+  }
+</style>
 </head>
-
 <body>
-  <!-- هذا النص لن يظهر أبداً بسبب CSS أعلاه، لكنه موجود تحسباً -->
-  <a href="https://tribly.infinityfree.me/">اضغط هنا إذا لم يتم التحويل تلقائياً</a>
+<div class="container">
+<h1>جدول تنظيم الأفكار والمهام</h1>
+<table>
+  <thead>
+    <tr>
+      <th>رقم</th>
+      <th>الفكرة / المهمة</th>
+      <th>الفئة</th>
+      <th>الأولوية</th>
+      <th>خطوات التنفيذ</th>
+      <th>الملاحظات</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- مثال صف قابل للتعديل -->
+    <tr>
+      <td>1</td>
+      <td><input type="text" placeholder="اكتب فكرتك هنا"></td>
+      <td>
+        <select>
+          <option>عاجلة</option>
+          <option>مهمة</option>
+          <option>جانبية</option>
+        </select>
+      </td>
+      <td>
+        <select>
+          <option>عالية</option>
+          <option>متوسطة</option>
+          <option>منخفضة</option>
+        </select>
+      </td>
+      <td><textarea rows="2" placeholder="خطوات التنفيذ"></textarea></td>
+      <td><textarea rows="2" placeholder="الملاحظات"></textarea></td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td><input type="text" placeholder="اكتب فكرتك هنا"></td>
+      <td>
+        <select>
+          <option>عاجلة</option>
+          <option>مهمة</option>
+          <option>جانبية</option>
+        </select>
+      </td>
+      <td>
+        <select>
+          <option>عالية</option>
+          <option>متوسطة</option>
+          <option>منخفضة</option>
+        </select>
+      </td>
+      <td><textarea rows="2" placeholder="خطوات التنفيذ"></textarea></td>
+      <td><textarea rows="2" placeholder="الملاحظات"></textarea></td>
+    </tr>
+    <!-- ممكن تضيف صفوف أكتر حسب الحاجة -->
+  </tbody>
+</table>
+</div>
 </body>
-
 </html>
